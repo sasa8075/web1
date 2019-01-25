@@ -1,0 +1,47 @@
+.MainTop{position:relative;top:0;left:0;width:100%;height:100%;text-align:center;}
+.MainTop .content{display:inline-block;background:#gray;vertical-align:middle}
+  #topMenu {
+  height: 30px;
+  width: 850px;
+  margin: auto;
+  }
+  #topMenu ul li {
+  list-style: none;
+  color: white;
+  background-color: #2d2d2d;
+  float: left;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  }
+  #topMenu .menuLink {
+  topMenu text-decoration:none;
+  color: white;
+  display: block;
+  width: 200px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Dotum, Arial;
+  }
+  #topMenu .menuLink:hover {
+  color: red;
+  background-color: #4d4d4d;
+  }
+
+
+
+  #one{
+    text-align: right;
+  }
+  #HomeLogin {
+    position: static;
+    background : black;
+    display:inline-block;
+  }
+  #HomeLogin1{
+    color: white;
+    position: relative;
+  }
+
+
+  body{background: gray;}

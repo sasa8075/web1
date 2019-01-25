@@ -4,16 +4,45 @@
     <title>나만의 공부방</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{background: gray;}
+      #topMenu {
+        height: 30px;
+        width: 850px;
+      }
+      #topMenu ul li {
+        list-style: none;
+        color: white;
+        background-color: #2d2d2d;
+        float: left;
+        line-height: 30px;
+        vertical-align: middle;
+        text-align: center;
+      }
+      #topMenu .menuLink {
+        topMenu text-decoration:none;
+        color: white;
+        display: block;
+        width: 150px;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: "Trebuchet MS", Dotum, Arial;
+      }
+      #topMenu .menuLink:hover {
+        color: red;
+        background-color: #4d4d4d;
+      }
+    </style>
   </head>
   <body>
-    <table border height="50" width="500">
-    <tr>
-      <td><a href="1.html">일기</a></td>
-      <td><a href="2.html">공부 계획</a></td>
-      <td><a href="3.html">낙서장</a></li></td>
-      <td><a href="home.html">홈으로</td>
-    </tr>
-    </table>
-  </body><hr>
-  <h1>공부 계획</h1><hr>
+    <nav id="topMenu">
+      <ul>
+        <li><a class="menuLink" href="home.html">홈으로</a></li>
+        <li><a class="menuLink" href="1.html">일기장</a></li>
+        <li><a class="menuLink" href="2.html">공부계획</a></li>
+        <li><a class="menuLink" href="3.html">낙서장</a></li>
+      </ul>
+    </nav>
+  </body>
+  <h1><hr>공부 계획</h1><hr>
 </html>

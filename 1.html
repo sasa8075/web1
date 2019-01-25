@@ -4,19 +4,48 @@
     <title>나만의 공부방</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{background: gray;}
+      #topMenu {
+        height: 30px;
+        width: 850px;
+      }
+      #topMenu ul li {
+        list-style: none;
+        color: white;
+        background-color: #2d2d2d;
+        float: left;
+        line-height: 30px;
+        vertical-align: middle;
+        text-align: center;
+      }
+      #topMenu .menuLink {
+        topMenu text-decoration:none;
+        color: white;
+        display: block;
+        width: 150px;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: "Trebuchet MS", Dotum, Arial;
+      }
+      #topMenu .menuLink:hover {
+        color: red;
+        background-color: #4d4d4d;
+      }
+    </style>
   </head>
   <body>
-    <table border height="50" width="500">
-    <tr>
-      <td><a href="1.html">일기</a></td>
-      <td><a href="2.html">공부 계획</a></td>
-      <td><a href="3.html">낙서장</a></li></td>
-      <td><a href="home.html">홈으로</td>
-    </tr>
-    </table>
-    <h1>일기</h1>
-    <hr>
-<p><strong>2019-02-16 저녁시간</strong>
+    <nav id="topMenu">
+      <ul>
+        <li><a class="menuLink" href="home.html">홈으로</a></li>
+        <li><a class="menuLink" href="1.html">일기장</a></li>
+        <li><a class="menuLink" href="2.html">공부계획</a></li>
+        <li><a class="menuLink" href="3.html">낙서장</a></li>
+      </ul>
+    </nav>
+
+    <h1><hr>일기장</h1>
+<hr><p><strong>2019-02-16 저녁시간</strong>
 장대원, 박규태, 정진우는 서로 손잡고 좋은곳으로 갔다...<br>
 나도 놀러가고 싶었는데.. ㅋㅋ 앙 기모찌~~~<br>
 <img src="imgs/불법.gif" width="15%" alt="강아지">></p><hr>
@@ -26,5 +55,12 @@
 <p><strong>2019-01-18 오후 11:00 사무실</strong><br>
 뚱이랑 개 싸움 졸라 짜증<br>
 <img src="imgs/연애.jpg" width="10%" alt="연애"></p><hr>
+<p><strong>2019-01-21 오후 09:00 사무실</strong><br>
+롤충 급습현장<br>
+<video controls width="200">
+  <source src="video/컴퓨터.mp4">
+</video>
+
+
   </body>
 </html>

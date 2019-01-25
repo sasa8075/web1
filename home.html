@@ -4,18 +4,46 @@
     <title>나만의 공부방</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
   </head>
   <body>
-  <h1><width:50%>여기가 홈이요..</h1><hr><br>
-    <marquee>공부 하기 싫다. 집 가고 싶다.</marquee>
+    <div class="MainTop">
+      <span class="content"><h1>싸군의 놀이터</h1></span>
+    </div>
+     <nav id="topMenu">
+      <ul>
+        <li><a class="menuLink" href="home.html">홈으로</a></li>
+        <li><a class="menuLink" href="1.html">일기장</a></li>
+        <li><a class="menuLink" href="2.html">공부계획</a></li>
+        <li><a class="menuLink" href="3.html">낙서장</a></li>
+      </ul>
+    </nav>
+  <h2><marquee>공부 하기 싫다. 집 가고 싶다.</marquee></h2>
 
-    <table border height="50" width="700">
-    <tr>
-      <td><a href="1.html">일기</a></td>
-      <td><a href="2.html">공부 계획</a></td>
-      <td><a href="3.html">낙서장</a></td>
-    </tr>
+  <div id="one">
+  <span id="HomeLogin">
+    <form id="HomeLogin1" action="http://localhost/login.php">
+      <p>아이디:<input type="text" name="아이디" value="아이디"></p>
+      <p>비밀번호:<input type="password" name="비밀번호" value="비밀번호"></p>
+        <input type="submit" name="확인" value="확인">
+    </form>
+  </span>
+</div>
 
-    <p><img src="imgs/배그.jpg" width="50%" alt="배그"></P>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <p><img src="imgs/배그.jpg" width="50%" alt="배그"></P> -->
   </body>
 </html>
