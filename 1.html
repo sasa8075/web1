@@ -1,66 +1,129 @@
 <!doctype html>
 <html>
-  <head>
-    <title>나만의 공부방</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      body{background: gray;}
-      #topMenu {
-        height: 30px;
-        width: 850px;
+<head>
+ <title>나만의 공부방</title>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="11.css">
+  <style>
+    .container{
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .container{
+      border:5px solid gray;
+    }
+    .container>*{
+      border:5px solid gray;
+    }
+    .container>.content>*{
+      border:5px solid gray;
+    }
+    .container .content{
+      padding-left:200px;
+      padding-right:200px;
+      overflow: hidden;
+    }
+    .container .content>*{
+      float:left;
+      padding-bottom:2500px;
+      margin-bottom:-2500px;
+    }
+    .container .content main{
+      width:100%;
+    }
+    .container .content nav{
+      width:200px;
+      margin-left: -100%;
+      left:-200px;
+      position: relative;
+    }
+    .container .content aside{
+      width:150px;
+      margin-right:-150px;
+    }
+    .container footer{
+      clear: both;
+    }
+    @media (max-width:599px){
+      .container .content{
+        padding-left:0;
+        padding-right:0;
+        overflow: visible;
       }
-      #topMenu ul li {
-        list-style: none;
-        color: white;
-        background-color: #2d2d2d;
-        float: left;
-        line-height: 30px;
-        vertical-align: middle;
-        text-align: center;
+      .container .content>*{
+        float:none;
+        padding-bottom:0;
+        margin-bottom:0;
       }
-      #topMenu .menuLink {
-        topMenu text-decoration:none;
-        color: white;
-        display: block;
-        width: 150px;
-        font-size: 12px;
-        font-weight: bold;
-        font-family: "Trebuchet MS", Dotum, Arial;
+      .container .content main{
+        width:100%;
       }
-      #topMenu .menuLink:hover {
-        color: red;
-        background-color: #4d4d4d;
+      .container .content nav{
+        width:auto;
+        margin-left: 0;
+        left:0;
+        position: relative;
       }
-    </style>
-  </head>
-  <body>
-    <nav id="topMenu">
-      <ul>
-        <li><a class="menuLink" href="home.html">홈으로</a></li>
-        <li><a class="menuLink" href="1.html">일기장</a></li>
-        <li><a class="menuLink" href="2.html">공부계획</a></li>
-        <li><a class="menuLink" href="3.html">낙서장</a></li>
-      </ul>
-    </nav>
+      .container .content aside{
+        width:auto;
+        margin-right:0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header id="MainTop">
+      <h1>일기장
+        <nav id="topMenu">
+          <ul>
+            <li><a class="menuLink" href="home.html">홈으로</a></li>
+            <li><a class="menuLink" href="1.html">일기장</a></li>
+            <li><a class="menuLink" href="2.html">공부계획</a></li>
+            <li><a class="menuLink" href="3.html">낙서장</a></li>
+          </ul>
+        </nav>
+      </h1>
+    </header>
+<!-- 상단 제목및 메뉴바 -->
+    <section class="content">
+      <main>
+        <hr><p><strong>2019-02-16 저녁시간</strong>
+        장대원, 박규태, 정진우는 서로 손잡고 좋은곳으로 갔다...<br>
+        나도 놀러가고 싶었는데.. ㅋㅋ 앙 기모찌~~~<br>
+        <img src="imgs/불법.gif" width="15%" alt="강아지">></p><hr>
+        <p><strong>2019-01-17 오후 10:00 사무실</strong><br>
+        대원이는 오늘도 역시 롤을 하면서 흥얼 거리고 있다...<br>
+        <img src="imgs/장대원.jpg" width="15%" alt="장대원"></p><hr>
+        <p><strong>2019-01-18 오후 11:00 사무실</strong><br>
+        뚱이랑 개 싸움 졸라 짜증<br>
+        <img src="imgs/연애.jpg" width="10%" alt="연애"></p><hr>
+        <p><strong>2019-01-21 오후 09:00 사무실</strong><br>
+        롤충 급습현장<br>
+        <video controls width="200">
+        <source src="video/컴퓨터.mp4">
+        </video>
 
-    <h1><hr>일기장</h1>
-<hr><p><strong>2019-02-16 저녁시간</strong>
-장대원, 박규태, 정진우는 서로 손잡고 좋은곳으로 갔다...<br>
-나도 놀러가고 싶었는데.. ㅋㅋ 앙 기모찌~~~<br>
-<img src="imgs/불법.gif" width="15%" alt="강아지">></p><hr>
-<p><strong>2019-01-17 오후 10:00 사무실</strong><br>
-대원이는 오늘도 역시 롤을 하면서 흥얼 거리고 있다...<br>
-<img src="imgs/장대원.jpg" width="15%" alt="장대원"></p><hr>
-<p><strong>2019-01-18 오후 11:00 사무실</strong><br>
-뚱이랑 개 싸움 졸라 짜증<br>
-<img src="imgs/연애.jpg" width="10%" alt="연애"></p><hr>
-<p><strong>2019-01-21 오후 09:00 사무실</strong><br>
-롤충 급습현장<br>
-<video controls width="200">
-  <source src="video/컴퓨터.mp4">
-</video>
 
 
-  </body>
+
+
+      </main>
+<!-- 중앙 -->
+     <nav>
+
+      </nav>
+<!-- 좌측 메뉴바 -->
+      <aside>
+
+      </aside>
+    </section>
+<!-- 우측 로그인창 -->
+    <footer>
+
+    </footer>
+<!-- 하단 -->
+  </div>
+</body>
 </html>

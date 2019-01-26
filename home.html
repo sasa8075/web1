@@ -1,48 +1,124 @@
 <!doctype html>
 <html>
-  <head>
-    <title>나만의 공부방</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="1.css">
-  </head>
-  <body>
-    <div class="MainTop">
-      <span class="content"><h1>싸군의 놀이터</h1></span>
-    </div>
-     <nav id="topMenu">
-      <ul>
-        <li><a class="menuLink" href="home.html">홈으로</a></li>
-        <li><a class="menuLink" href="1.html">일기장</a></li>
-        <li><a class="menuLink" href="2.html">공부계획</a></li>
-        <li><a class="menuLink" href="3.html">낙서장</a></li>
-      </ul>
-    </nav>
-  <h2><marquee>공부 하기 싫다. 집 가고 싶다.</marquee></h2>
-
-  <div id="one">
-  <span id="HomeLogin">
-    <form id="HomeLogin1" action="http://localhost/login.php">
-      <p>아이디:<input type="text" name="아이디" value="아이디"></p>
-      <p>비밀번호:<input type="password" name="비밀번호" value="비밀번호"></p>
-        <input type="submit" name="확인" value="확인">
-    </form>
-  </span>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <p><img src="imgs/배그.jpg" width="50%" alt="배그"></P> -->
-  </body>
+<head>
+ <title>나만의 공부방</title>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="11.css">
+  <style>
+    .container{
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .container{
+      border:5px solid gray;
+    }
+    .container>*{
+      border:5px solid gray;
+    }
+    .container>.content>*{
+      border:5px solid gray;
+    }
+    .container .content{
+      padding-left:200px;
+      padding-right:200px;
+      overflow: hidden;
+    }
+    .container .content>*{
+      float:left;
+      padding-bottom:2500px;
+      margin-bottom:-2500px;
+    }
+    .container .content main{
+      width:100%;
+    }
+    .container .content nav{
+      width:200px;
+      margin-left: -100%;
+      left:-200px;
+      position: relative;
+    }
+    .container .content aside{
+      width:150px;
+      margin-right:-150px;
+    }
+    .container footer{
+      clear: both;
+    }
+    @media (max-width:599px){
+      .container .content{
+        padding-left:0;
+        padding-right:0;
+        overflow: visible;
+      }
+      .container .content>*{
+        float:none;
+        padding-bottom:0;
+        margin-bottom:0;
+      }
+      .container .content main{
+        width:100%;
+      }
+      .container .content nav{
+        width:auto;
+        margin-left: 0;
+        left:0;
+        position: relative;
+      }
+      .container .content aside{
+        width:auto;
+        margin-right:0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header id="MainTop">
+      <h1>싸군의 놀이터
+        <nav id="topMenu">
+          <ul>
+            <li><a class="menuLink" href="home.html">홈으로</a></li>
+            <li><a class="menuLink" href="1.html">일기장</a></li>
+            <li><a class="menuLink" href="2.html">공부계획</a></li>
+            <li><a class="menuLink" href="3.html">낙서장</a></li>
+          </ul>
+        </nav>
+      </h1>
+    </header>
+<!-- 상단 제목및 메뉴바 -->
+    <section class="content">
+      <main>
+        저의 놀이터에 오신걸 환영합니다.
+        여기에 들어온 그대는 용자.
+      </main>
+<!-- 중앙 -->
+     <nav id="LeftMenu">
+       <p><a class="menulLink1" href="https://opentutorials.org/course/1">생활코딩</a></p>
+       <p><a class="menulLink1" href="https://github.com/">깃허브</a></p>
+       <p><a class="menulLink1" href="https://www.naver.com/">네이버</a></p>
+       <p><a class="menulLink1" href="no">링크4</a></p>
+       <p><a class="menulLink1" href="no">링크5 </a></p>
+       <p><a class="menulLink1" href="no">링크6</a></p>
+      </nav>
+<!-- 좌측 메뉴바 -->
+      <aside>
+       <div id="one">
+         <span id="HomeLogin">
+            <form id="HomeLogin1" action="http://localhost/login.php">
+              <p>아이디 <input type="text" name="아이디" value="아이디"></p>
+              <p>비밀번호 <input type="password" name="비밀번호" value="비밀번호"></p>
+            <input type="submit" name="확인" value="확인">
+            </form>
+          </span>
+        </div>
+      </aside>
+    </section>
+<!-- 우측 로그인창 -->
+    <footer>
+      존망인생 3명중 리더 싸군의 개인적인 홈페이지 입니다.
+    </footer>
+<!-- 하단 -->
+  </div>
+</body>
 </html>

@@ -1,0 +1,75 @@
+#MainTop {
+    text-align: center
+}
+/* 상단 제목 */
+#topMenu {
+  height: 30px;
+  width: 850px;
+  margin: auto;
+  }
+  #topMenu ul li {
+  list-style: none;
+  color: white;
+  background-color: #2d2d2d;
+  float: left;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  }
+  #topMenu .menuLink {
+  topMenu text-decoration:none;
+  color: white;
+  display: block;
+  width: 200px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Dotum, Arial;
+  }
+  #topMenu .menuLink:hover {
+  color: red;
+  background-color: #4d4d4d;
+  }
+/* 상단 메뉴바 */
+#LeftMenu{
+    height: 500px
+    margin: auto;
+    }
+#LeftMenu{
+    list-style: none;
+    color: white;
+    background-color: #2d2d2d;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+}
+#LeftMenu .menulLink1{
+    LeftMenu text-decoration:none;
+    color: white;
+    display: block;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Dotum, Arial;
+}
+#LeftMenu .menulLink1:hover {
+  color: red;
+  background-color: #4d4d4d;
+  }
+/* 좌측 메뉴바 */
+  #one{
+ height: 350px;
+  width: 400px;
+    text-align: left;
+  }
+  #HomeLogin {
+    position: static;
+    background : black;
+    display:inline-block;
+  }
+  #HomeLogin1{
+    color: white;
+    position: relative;
+  }
+/* 로그인 */
+body{background: gray;}
+/* 바탕색 */
